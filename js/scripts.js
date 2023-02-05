@@ -32,3 +32,7 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+$('video').on('tap', function(e) {
+    $(this).get(0).play();
+})
