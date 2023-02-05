@@ -33,6 +33,11 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
-$('video').on('tap', function(e) {
-    $(this).get(0).play();
+$('video').on('tap click', function(e) {
+    const vid = $(this).get(0);
+    if (vid.paused) {
+        vid.play();
+    } else {
+        vid.pause();
+    }
 })
